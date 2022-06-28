@@ -41,6 +41,15 @@ a.btn-login, a.btn-register {
   font-weight: 700;
 }
 
+.user-icon {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.dropdown-item {
+  font-weight: 500;
+}
+
 /* Cards */
 .card-body, h5.card-title, .card-body a {
   color: #343A40;
@@ -71,9 +80,16 @@ a.btn-login, a.btn-register {
 
 /* Card */
 .card-register {
-  width: 25rem;
+  width: 22rem;
 }
 
-.btn-register {
-  font-weight: 700;
+.title-divider {
+  background: white;
+  height: 0.3rem;
+  width: 6rem;
+  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }

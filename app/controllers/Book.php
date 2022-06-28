@@ -3,6 +3,10 @@
   class Book extends Controller {
     public function index()
     {
+      if( !isset($_SESSION['login']) ) {
+        header('Location: ' . BASEURL . '/login');
+      }
+
       $data['title'] = 'Books';
       $data['book'] = $this->model('Book_model')->getAllBook();
       

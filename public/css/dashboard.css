@@ -64,6 +64,10 @@ body {
   font-size: .75rem;
 }
 
+.admin-dashboard {
+  color: #b3c6e3;
+}
+
 /*
  * Navbar
  */
@@ -105,4 +109,16 @@ body {
 }
 .btn-logout:hover {
   color: #101820 !important;
+}
+
+/* dashboard main */
+/* Cards */
+.card-body, h5.card-title, .card-body a {
+  color: #343A40;
+  font-weight: 700;
+}
+
+.card-text {
+  color: #6C757D;
+  font-size: 14px;
 }
