@@ -9,7 +9,7 @@
       $this->db = new Database;
     }
 
-    public function getUser($username, $password)
+    public function user($username, $password)
     {
 
       $query = 'SELECT * FROM ' . $this->table . ' WHERE username = :username AND password = :password';

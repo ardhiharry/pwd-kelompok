@@ -13,7 +13,7 @@
     public function addDataUser($data)
     {
       $username = strtolower(stripslashes($data['username']));
-      $email = $data['email'];
+      $email = strtolower(stripslashes($data['email']));
       $password = $data['password'];
 
       // encrypt password

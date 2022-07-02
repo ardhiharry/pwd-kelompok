@@ -10,7 +10,12 @@
           <div class="position-absolute end-0 px-3 py-2 bookmark">
             <a href="" class="btn btn-bookmark"><i class="bi bi-bookmark-plus"></i></a>
           </div>
-          <img src="https://source.unsplash.com/600x400?programming" alt="..." class="card-img-top">
+          <?php if($book['picture'] == null) : ?>
+            <img src="https://source.unsplash.com/600x400?programming" alt="..." class="card-img-top">
+            
+            <?php else : ?>
+              <img src="<?= BASEURL; ?>/img/<?= $book['picture']; ?>" alt="..." class="card-img-top">
+          <?php endif; ?>
           <div class="card-body">
             <h5 class="card-title mb-2"><?= $book['title']; ?></h5>
             <p class="card-text mb-3"><?= $book['category']; ?></p>

@@ -3,7 +3,7 @@
 <?php startblock('container') ?>
   <div class="row justify-content-center">
     <div class="col-md-4 mt-3">
-      <?php Flasher::flashUser(); ?>
+      <?php Flasher::flash(); ?>
     </div>
   </div>
 

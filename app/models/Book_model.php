@@ -10,7 +10,7 @@
 
     public function getAllBook()
     {
-      $this->db->query('SELECT b.id_book, c.category, b.title, b.writer, b.publisher, b.publication_year, b.description
+      $this->db->query('SELECT b.id_book, c.id_category, c.category, b.title, b.writer, b.publisher, b.publication_year, b.description, b.picture
         FROM category c INNER JOIN book b
         USING (id_category)
       ');
